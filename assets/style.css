@@ -1,0 +1,95 @@
+.figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    font-family: 'Raleway', sans-serif;
+    vertical-align: middle;
+    text-align: center
+ }
+
+ .label {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif
+ }
+
+ .box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; 
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+ } 
+
+ .dropdown {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%; 
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+ }  
+
+li {
+    list-style: none;
+}
+
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+}
+
+.searchButtons{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%; 
+}
+
+.btn{
+    text-decoration:none;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 8px 8px;
+}
+
+.btn2{
+    text-decoration:none;
+    background-color: white;
+    color: rgb(83, 83, 83);
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 8px 8px;
+}
+
+.footer {
+    margin-bottom: 100px;
+    font-family: 'Raleway', sans-serif
+ }
+
+ .grey{
+    color: darkslategrey;
+}
+
+.green{
+    color: rgb(4, 97, 4);
+}
