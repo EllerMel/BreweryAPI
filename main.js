@@ -2,24 +2,33 @@ document.getElementById('getData').addEventListener('click', getTheData)
 
 function getTheData() {
 
-    var city = document.getElementById('City').value;
+    var city = document.getElementById('City').value.trim();
     console.log(city);
-    var state = document.getElementById('State').value;
+    var state = document.getElementById('State').value.trim();
     console.log(state);
 
-    if (city != "" && state != ""){
+    if (city != '' && state != ''){
         apiURL = `https://api.openbrewerydb.org/breweries?by_city=${city}&by_state=${state}&per_page=15`;
+        showTheData(apiURL);
         console.log(apiURL);
     }
-    else if (city = "" && state != ""){
+    else if (city == '' && state != ''){
         apiURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=15`;
+        showTheData(apiURL);        
         console.log(apiURL);
     }
-    else if (city != "" && state == ""){
+    else if (city != '' && state == ''){
         apiURL = `https://api.openbrewerydb.org/breweries?by_city=${city}&per_page=15`;
+        showTheData(apiURL);        
         console.log(apiURL);
     }
+    else if (city == '' && state == ''){
+        document.getElementById('message').innerHTML = "Please enter in either a city or a state or both to search";
+    }
+}
 
+function showTheData() {
+    document.getElementById('message').innerHTML = "";
     fetch(apiURL)
         .then(function (response) {
             //console.log(response.json());
@@ -48,6 +57,7 @@ function getTheData() {
 document.getElementById('getClear').addEventListener('click', getClearData)
 function getClearData() {
     document.getElementById('mainImage').style.display = "block";
+    document.getElementById('message').innerHTML = "";
     document.getElementById('brewery').style.display = "none";
     document.getElementById('City').value = "";
     document.getElementById('State').value = "";
