@@ -2,23 +2,23 @@ document.getElementById('getData').addEventListener('click', getTheData)
 
 function getTheData() {
 
-    city = document.getElementById('City').value;
-    console.log(city.value);
-    state = document.getElementById('State').value;
-    console.log(state.vale);
+    var city = document.getElementById('City').value;
+    console.log(city);
+    var state = document.getElementById('State').value;
+    console.log(state);
 
     if (city != "" && state != ""){
-        apiURL = `https://api.openbrewerydb.org/breweries?by_city=${city}&by_state=${state}&per_page=15`
+        apiURL = `https://api.openbrewerydb.org/breweries?by_city=${city}&by_state=${state}&per_page=15`;
+        console.log(apiURL);
     }
     else if (city = "" && state != ""){
-        apiURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=15`    
+        apiURL = `https://api.openbrewerydb.org/breweries?by_state=${state}&per_page=15`;
+        console.log(apiURL);
     }
     else if (city != "" && state == ""){
-        apiURL = `https://api.openbrewerydb.org/breweries?by_city=${city}&per_page=15`
+        apiURL = `https://api.openbrewerydb.org/breweries?by_city=${city}&per_page=15`;
+        console.log(apiURL);
     }
-    apiURL = `https://api.openbrewerydb.org/breweries?by_city=Detroit&by_state=MI&per_page=15`
-
-    console.log(apiURL)
 
     fetch(apiURL)
         .then(function (response) {
