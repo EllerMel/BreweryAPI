@@ -9,14 +9,14 @@
     <title>Open Brewery API</title>
 </head>
 
-<body>
-    <div>
-        <img class="figure" id="mainImage" src="assets/images/taps.jpg">
-    </div>
-
+<body class="body">
     <main>
-        <h1 class="h1 green">Discover Local Breweries, Cideries and Craft Beer Bottle Shops</h1>
-        <p id="message"></p>
+        <h1 class="h1">Discover Local Breweries, Cideries and Craft Beer Bottle Shops</h1>
+        <div>
+            <img class="figure" id="mainImage" src="assets/images/taps.jpg">
+        </div>
+        <h2 class="h2"> Welcome! Enter in a City and/or select a State to begin your search! </h2>
+        <p class="message" id="message"></p>
         <section class="search">
             <div>
                     <label class="label">City</label>
@@ -81,8 +81,11 @@
                 <button id="getClear" class="btn2">Clear</button>
         </section>
 
+        <section>
+            <p class="message2" id="message2"></p>            
+        </section>
 
-        <section class="grey">
+        <section>
             <div>
                 <label id="brewery"></label>
             </div>
@@ -91,7 +94,7 @@
 
     <footer class="footer">
         <details>
-            <p>API: https://www.openbrewerydb.org/</p>
+            <p>API: <a href="https://www.openbrewerydb.org/" target="_blank">https://www.openbrewerydb.org</a></p>
         </details>
     </footer>
 

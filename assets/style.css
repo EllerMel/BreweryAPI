@@ -1,3 +1,7 @@
+.body {
+background-color: darkgrey;
+}
+
 .figure {
     display: block;
     margin-left: auto;
@@ -12,13 +16,35 @@
     width: 50%; 
     font-family: 'Raleway', sans-serif;
     vertical-align: middle;
-    text-align: center
+    text-align: center;
+    color: rgb(4, 97, 4);
  }
+
+ .h2 {
+    margin-left: 5%;
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif
+ }
+
+.message {
+    margin-left: 5%;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: red   
+}
+
+.message2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    color: rh rgb(4, 97, 4)
+}
 
  .label {
     margin-left: auto;
     margin-right: auto;
-    width: 50%; 
     font-size: 1.25rem;
     font-family: 'Raleway', sans-serif
  }
@@ -90,11 +116,3 @@ a:active {color:#0000FF;}  /* selected link */
     margin-bottom: 100px;
     font-family: 'Raleway', sans-serif
  }
-
- .grey{
-    color: darkslategrey;
-}
-
-.green{
-    color: rgb(4, 97, 4);
-}
